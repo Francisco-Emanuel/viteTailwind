@@ -21,7 +21,7 @@ export default function App() {
     {
       icon: LightBulbIcon,
       description: 'Copyrighter da Opportunity',
-      name: 'jão'
+      name: 'JB'
     },
     {
       icon: ClockIcon,
@@ -34,6 +34,9 @@ export default function App() {
     <>
 
         <div className="container flex h-screen w-screen bg-gray-800 rounded-sm mx-auto my-auto py-12">
+          <div className="container mx-auto w-screen">
+            <h1 className="font-bold font-sans text-center text-white text-3xl">Membros da Opp</h1>
+          </div>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mt-10 flex justify-center align-middle">
               <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
