@@ -33,7 +33,7 @@ export default function App() {
   return (
     <>
 
-        <div className="container flex h-screen w-screen bg-gray-800 rounded-sm mx-auto my-auto py-12">
+        <div className="container flex flex-col h-screen w-screen bg-gray-800 rounded-sm mx-auto my-auto py-12">
           <div className="container mx-auto w-screen">
             <h1 className="font-bold font-sans text-center text-white text-3xl">Membros da Opp</h1>
           </div>
