@@ -1,4 +1,5 @@
 import { BoltIcon, RocketLaunchIcon, LightBulbIcon, ClockIcon } from '@heroicons/react/24/outline'
+import { motion } from 'framer-motion'
 
 export default function App() {
 
@@ -30,16 +31,36 @@ export default function App() {
     }
   ]
 
+  const foda = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delayChildren: 1
+      }
+    }
+  }
+
   return (
     <>
 
-        <div className="container flex flex-col h-screen w-screen bg-gray-800 rounded-sm mx-auto my-auto py-12">
-          <div className="container mx-auto w-screen">
+        <motion.div className="container flex flex-col h-screen bg-gray-800 mx-auto rounded-sm py-12" variants={foda} initial="hidden" animate="show">
+          <motion.div className="container" animate={{
+            scale: 1.3,
+            transition: {
+              duration: 1,
+            },
+           }}>
             <h1 className="font-bold font-sans text-center text-white text-3xl">Membros da Opp</h1>
-          </div>
+          </motion.div>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mt-10 flex justify-center align-middle">
-              <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
+            <motion.div className="mt-10 flex justify-center align-middle" animate={{ 
+            x: 100,
+            transition: {
+              duration: 1,
+            },
+           }}>
+              <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0" >
                 {objetos.map((objeto) => (
                   <div key={objeto.name} className="relative">
                     <dt>
@@ -52,9 +73,9 @@ export default function App() {
                   </div>
                 ))}
               </dl>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
 
     </>
   )
