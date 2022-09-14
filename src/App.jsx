@@ -26,7 +26,7 @@ export default function App() {
     },
     {
       icon: ClockIcon,
-      description: 'Não sei',
+      description: 'Gostosa da Opportunity',
       name: 'Porelli'
     }
   ]
@@ -44,8 +44,8 @@ export default function App() {
   return (
     <>
 
-        <motion.div className="container flex flex-col h-screen bg-gray-800 mx-auto rounded-sm py-12" variants={foda} initial="hidden" animate="show">
-          <motion.div className="container" animate={{
+        <motion.div className="flex flex-col h-screen bg-gray-800 rounded-sm py-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" variants={foda} initial="hidden" animate="show">
+          <motion.div className="max-w-x" animate={{
             scale: 1.3,
             transition: {
               duration: 1,
