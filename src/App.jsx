@@ -6,22 +6,22 @@ export default function App() {
   const objetos = [
     {
       icon: BoltIcon,
-      description: 'Designer da opportunity',
+      description: 'Designer',
       name: 'GH'
     },
     {
       icon: RocketLaunchIcon,
-      description: 'Programador da Opportuniy',
+      description: 'Programador',
       name:'Xico'
     },
     {
       icon: RocketLaunchIcon,
-      description: 'Programador e marketeiro da Opportunity',
+      description: 'Gestor de tráfego e programador',
       name:'Tonet'
     },
     {
       icon: LightBulbIcon,
-      description: 'Copyrighter da Opportunity',
+      description: 'Copyrighter',
       name: 'JB'
     },
     {
