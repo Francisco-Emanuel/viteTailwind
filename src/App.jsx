@@ -45,7 +45,7 @@ export default function App() {
     <>
 
         <motion.div className="flex flex-col h-screen bg-gray-800 rounded-sm py-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" variants={foda} initial="hidden" animate="show">
-          <motion.div className="max-w-x" animate={{
+          <motion.div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" animate={{
             scale: 1.3,
             transition: {
               duration: 1,
@@ -65,7 +65,7 @@ export default function App() {
                   <div key={objeto.name} className="relative">
                     <dt>
                       <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-800 text-gray-300">
-                        <objeto.icon className="h-6 w-6" aria-hidden="true" />
+                        <objeto.icon className="h-6 w-6 text-yellow-300" aria-hidden="true" />
                       </div>
                       <p className="ml-16 text-lg font-medium leading-6 text-gray-300">{objeto.name}</p>
                     </dt>
