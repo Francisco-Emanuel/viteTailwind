@@ -26,7 +26,7 @@ export default function App() {
     },
     {
       icon: ClockIcon,
-      description: 'Gostosa da Opportunity',
+      description: 'Trafego da Opportunity',
       name: 'Porelli'
     }
   ]
